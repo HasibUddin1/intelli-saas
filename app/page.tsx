@@ -27,10 +27,10 @@ export default async function Home() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <button className="px-6 py-3 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 text-white font-semibold hover:opacity-90 transition">
+            <button className="px-6 py-3 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 text-white font-semibold hover:opacity-90 transition cursor-pointer">
               Get Started Free
             </button>
-            <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-white transition">
+            <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-white transition cursor-pointer">
               View Demo
             </button>
           </div>
@@ -83,43 +83,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="py-24 bg-linear-to-b from-[#111] to-[#0a0a0a]">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-4">How It Works</h2>
-          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-            Start using in just 3 simple steps.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            {[
-              {
-                step: "01",
-                title: "Create Account",
-                desc: "Sign up and set up your workspace.",
-              },
-              {
-                step: "02",
-                title: "Add Your Data",
-                desc: "Import files or connect external tools.",
-              },
-              {
-                step: "03",
-                title: "Generate & Automate",
-                desc: "Create content or run workflows instantly.",
-              },
-            ].map((s, i) => (
-              <div key={i} className="text-center">
-                <div className="text-6xl font-bold text-purple-500 mb-4">
-                  {s.step}
-                </div>
-                <h3 className="text-2xl mb-2">{s.title}</h3>
-                <p className="text-gray-400">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* PRICING */}
       <section className="py-28">
