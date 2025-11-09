@@ -23,7 +23,7 @@ export default function PricingCard({ plan }: Props) {
         ))}
       </ul>
       <button className="mt-6 w-full px-6 py-3 rounded-xl bg-linear-to-r from-blue-500 to-purple-600 text-white font-semibold hover:opacity-90 transition cursor-pointer">
-        Choose Plan
+        {Number(plan.price_monthly) === 0 ? "Get Started" : "Choose Plan"}
       </button>
     </div>
   );
